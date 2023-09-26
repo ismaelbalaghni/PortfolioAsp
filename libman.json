@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap-icons@1.11.1",
+      "destination": "wwwroot/lib/bootstrap-icons/"
+    },
+    {
+      "library": "devicons@1.8.0",
+      "destination": "wwwroot/lib/devicons/"
+    },
+    {
+      "library": "devicon@2.15.1",
+      "destination": "wwwroot/lib/devicon/"
+    }
+  ]
+}
