@@ -1,0 +1,80 @@
+﻿@page
+@model Portfolio.Pages.EducationModel
+@{
+    ViewData["Title"] = "Education";
+}
+
+<div class="container-fluid text-center justify-content-center">
+    <div id="esiea">
+        <h1 class="display-6">
+            Diplôme d'ingénieur<br>
+            <small class="text-body-secondary">Ingénierie logicielle et systèmes d'information</small>
+        </h1>
+        <figure class="figure">
+            <img src="~/img/education/logo_esiea.png" class="figure-img rounded" alt="ESIEA">
+            <figcaption class="figure-caption">Logo de l'ESIEA</figcaption>
+        </figure>
+        <dl class="row row-cols-2">
+            <dt class="col text-end">Période</dt>
+            <dd class="col text-start">26/08/2019 - 31/08/2022</dd>
+            <dt class="col text-end">Cursus</dt>
+            <dd class="col text-start">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Électronique</li>
+                    <li class="list-inline-item">Informatique</li>
+                    <li class="list-inline-item">Ingénierie logicielle</li>
+                </ul>
+            </dd>
+            <dt class="col text-end">Technologies vues en cours</dt>
+            <dd class="col text-start">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Java</li>
+                    <li class="list-inline-item">C# (Unity)</li>
+                    <li class="list-inline-item">Git</li>
+                    <li class="list-inline-item">Android/Android Studio</li>
+                    <li class="list-inline-item">Administration système</li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="row">
+            <div class="col"><a class="btn btn-primary" href="https://www.esiea.fr" role="button">Site de l'école</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="dut">
+        <h1 class="display-6">
+            Diplôme universitaire et technologique<br>
+            <small class="text-body-secondary">Génie électrique et informatique industrielle</small>
+        </h1>
+        <figure class="figure">
+            <img src="~/img/education/logo_geii.png" class="figure-img rounded" alt="ESIEA">
+            <figcaption class="figure-caption">Logo de la formation</figcaption>
+        </figure>
+        <dl class="row row-cols-2">
+            <dt class="col align-middle text-end">Période</dt>
+            <dd class="col text-start">01/09/2017 - 26/07/2019</dd>
+            <dt class="col text-end">Cursus</dt>
+            <dd class="col text-start">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Électronique</li>
+                    <li class="list-inline-item">Automatique et automatisation</li>
+                    <li class="list-inline-item">Informatique industrielle</li>
+                </ul>
+            </dd>
+            <dt class="col text-end">Technologies vues en cours</dt>
+            <dd class="col text-start">
+                <ul class="list-inline">
+                    <li class="list-inline-item">C</li>
+                    <li class="list-inline-item">C++</li>
+                    <li class="list-inline-item">VHDL</li>
+                    <li class="list-inline-item">Python</li>
+                    <li class="list-inline-item">FPGA</li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="row">
+            <div class="col"><a class="btn btn-success" href="https://cva-geii.parisnanterre.fr/formations/b-u-t-geii" role="button">Site de la formation</a></div>
+        </div>
+    </div>
+</div>
