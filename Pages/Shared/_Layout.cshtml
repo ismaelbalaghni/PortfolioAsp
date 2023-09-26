@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="author" content="Ismaël Balaghni <ismael@balaghni.paris>">
+    <meta name="description" content="Le site (statique) d'un jeune développeur.">
+    <meta name="msapplication-config" content="~/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="~/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/devicon/devicon.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1"><i class="bi bi-person-fill"></i>Ismaël Balaghni</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-between" id="navbarSupportedContent">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link active text-dark" asp-area="" asp-page="/Index"><i class="bi bi-house-door-fill"></i> Accueil</a>
+                        <a class="nav-link active text-dark" asp-area="" asp-page="/Education"><i class="bi bi-book-fill"></i> Éducation et formation</a>
+                        <a class="nav-link active text-dark" asp-area="" asp-page="/WorkExperience"><i class="bi bi-building-fill"></i> Expérience professionnelle</a>
+                        <a class="nav-link active text-dark" asp-area="" asp-page="/Projects"><i class="bi bi-wrench-adjustable-circle-fill"></i> Projets</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Ismaël Balaghni - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
