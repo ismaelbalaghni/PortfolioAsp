@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="PublishSPAforGitHubPages.Build" Version="2.1.0" />
+  </ItemGroup>
+
 </Project>
